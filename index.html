@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>RAHUSA DATA | VTU Services</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7f5;
+            color: #18352a;
+        }
+
+        header {
+            background: #087443;
+            color: white;
+            padding: 22px 16px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 22px;
+            flex-wrap: wrap;
+            padding: 15px;
+            background: #075b35;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 35px 16px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+        }
+
+        .hero p {
+            color: #52685c;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+            gap: 15px;
+            max-width: 650px;
+            padding: 16px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 22px 10px;
+            text-align: center;
+            box-shadow: 0 3px 12px #0000000d;
+        }
+
+        .icon {
+            font-size: 34px;
+        }
+
+        button {
+            background: #087443;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 16px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 22px;
+            background: #075b35;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>RAHUSA DATA</h1>
+    <p>Your Trusted VTU Platform</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Welcome to RAHUSA DATA</h2>
+    <p>Fast, convenient digital services in one place.</p>
+</section>
+
+<section class="services" id="services">
+
+    <div class="card">
+        <div class="icon">📱</div>
+        <h3>Buy Data</h3>
+        <p>Choose your mobile network.</p>
+        <button onclick="showMessage('Data')">
+            Buy Data
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="icon">☎️</div>
+        <h3>Airtime</h3>
+        <p>Recharge your phone.</p>
+        <button onclick="showMessage('Airtime')">
+            Buy Airtime
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="icon">📺</div>
+        <h3>Cable TV</h3>
+        <p>Pay your TV subscription.</p>
+        <button onclick="showMessage('Cable TV')">
+            Continue
+        </button>
+    </div>
+
+    <div class="card">
+        <div class="icon">💡</div>
+        <h3>Electricity</h3>
+        <p>Pay supported electricity bills.</p>
+        <button onclick="showMessage('Electricity')">
+            Continue
+        </button>
+    </div>
+
+</section>
+
+<footer id="contact">
+    <p>RAHUSA DATA</p>
+    <p>Reliable Digital Services</p>
+    <p>&copy; 2026 RAHUSA DATA</p>
+</footer>
+
+<script>
+    function showMessage(service) {
+        alert(
+            service +
+            " service will be available after setup."
+        );
+    }
+</script>
+
+</body>
+</html>
